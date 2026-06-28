@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOP SERVICES EXELIUM</title>
+<link rel="icon" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="description" content="TOP SERVICES EXELIUM — Fourniture d'équipements professionnels, produits, logistique et services sur mesure. L'excellence au service de votre performance.">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#07203F;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:#D4A12F;color:#07203F}
+
+@keyframes tseRise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+@keyframes tseFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+@keyframes tseSpin{to{transform:rotate(360deg)}}
+@keyframes tseHalo{0%,100%{opacity:.5;transform:translate(-50%,-50%) scale(1)}50%{opacity:.85;transform:translate(-50%,-50%) scale(1.1)}}
+@keyframes tseSheen{0%{transform:translateX(-130%) skewX(-18deg)}60%,100%{transform:translateX(240%) skewX(-18deg)}}
+@keyframes tseMarquee{to{transform:translateX(-50%)}}
+@keyframes tseGrad{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+@keyframes tseScroll{0%{transform:translateY(0);opacity:0}25%{opacity:1}75%{opacity:1}100%{transform:translateY(13px);opacity:0}}
+@keyframes earthRotate{0%{background-position:0 0}100%{background-position:400px 0}}
+@keyframes globeStar{0%,100%{opacity:.08}50%{opacity:.9}}
+@keyframes globeStarSlow{0%,100%{opacity:.08}50%{opacity:.7}}
+@keyframes globeStarFast{0%,100%{opacity:.08}50%{opacity:1}}
+
+@media(max-width:860px){.tse-hide-m{display:none!important}}
+@media(max-width:640px){
+  .footer-grid{grid-template-columns:1fr 1fr!important}
+  .contact-grid{grid-template-columns:1fr!important}
+}
+
+.nav-link{text-decoration:none;color:rgba(255,255,255,.82);font-size:14px;font-weight:500;padding:9px 16px;border-radius:30px;transition:.25s;white-space:nowrap}
+.nav-link:hover{color:#fff;background:rgba(212,161,47,.16)}
+
+.btn-cta{text-decoration:none;display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#E8C26B,#D4A12F);color:#07203F;font-weight:700;font-size:14px;padding:11px 22px;border-radius:40px;box-shadow:0 8px 26px -8px rgba(212,161,47,.7);transition:.25s}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px -8px rgba(212,161,47,.85)}
+
+.btn-hero-gold{text-decoration:none;display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg,#E8C26B,#D4A12F);color:#07203F;font-weight:700;font-size:15px;padding:16px 30px;border-radius:46px;box-shadow:0 16px 40px -12px rgba(212,161,47,.7);transition:.28s}
+.btn-hero-gold:hover{transform:translateY(-3px);box-shadow:0 22px 50px -12px rgba(212,161,47,.9)}
+
+.btn-hero-glass{text-decoration:none;display:inline-flex;align-items:center;gap:10px;color:#fff;font-weight:600;font-size:15px;padding:16px 30px;border-radius:46px;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.06);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:.28s}
+.btn-hero-glass:hover{border-color:#D4A12F;background:rgba(212,161,47,.12)}
+
+.svc-icon{width:62px;height:62px;border-radius:16px;background:linear-gradient(150deg,#0B2D66,#103A78);display:flex;align-items:center;justify-content:center;margin-bottom:22px;box-shadow:0 12px 26px -10px rgba(11,45,102,.6);transition:.3s;flex-shrink:0}
+.svc-card:hover .svc-icon{transform:translateY(-4px) rotate(-6deg)}
+
+.svc-icon-gold{width:62px;height:62px;border-radius:16px;background:linear-gradient(135deg,#E8C26B,#D4A12F);display:flex;align-items:center;justify-content:center;margin-bottom:22px;box-shadow:0 12px 26px -10px rgba(212,161,47,.6);transition:.3s;flex-shrink:0}
+.svc-card:hover .svc-icon-gold{transform:translateY(-4px) rotate(-6deg)}
+
+.social-btn{text-decoration:none;width:40px;height:40px;border-radius:11px;border:1px solid rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;color:#E8C26B;font-weight:700;font-family:'Poppins',sans-serif;transition:.25s}
+.social-btn:hover{background:rgba(212,161,47,.16);border-color:#D4A12F}
+
+.footer-link{text-decoration:none;color:rgba(255,255,255,.66);font-size:14px;transition:.2s}
+.footer-link:hover{color:#E8C26B}
+
+.f-input{font-family:inherit;font-size:15px;padding:13px 15px;border-radius:12px;border:1px solid #DCE4EF;background:#fff;color:#16243F;outline:none;transition:.2s;width:100%}
+.f-input:focus{border-color:#D4A12F;box-shadow:0 0 0 3px rgba(212,161,47,.15)}
+select.f-input{cursor:pointer}
+
+.btn-submit{margin-top:24px;width:100%;border:none;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#E8C26B,#D4A12F);color:#07203F;font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;padding:16px;border-radius:14px;box-shadow:0 16px 36px -14px rgba(212,161,47,.7);transition:.25s}
+.btn-submit:hover{transform:translateY(-2px);box-shadow:0 22px 46px -14px rgba(212,161,47,.9)}
+
+.scene-btn{cursor:pointer;border:none;font-family:'Inter',sans-serif;font-weight:600;font-size:12px;padding:8px 15px;border-radius:30px;transition:.25s;color:rgba(255,255,255,.7);background:transparent}
+.scene-btn.active{color:#07203F;background:linear-gradient(135deg,#E8C26B,#D4A12F)}
+.scene-btn:hover:not(.active){color:#fff;background:rgba(255,255,255,.08)}
+</style>
+</head>
+<body>
+
+<!-- custom cursor -->
+<div id="tseCurRing" style="position:fixed;left:0;top:0;width:38px;height:38px;border:1.5px solid rgba(212,161,47,.9);border-radius:50%;pointer-events:none;z-index:9999;mix-blend-mode:screen;transition:width .2s,height .2s,background .2s;will-change:transform"></div>
+<div id="tseCurDot" style="position:fixed;left:0;top:0;width:6px;height:6px;background:#fff;border-radius:50%;pointer-events:none;z-index:9999;will-change:transform"></div>
+
+<!-- HEADER -->
+<header style="position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:14px clamp(18px,4vw,52px);background:rgba(7,26,51,.55);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);border-bottom:1px solid rgba(212,161,47,.18)">
+  <a href="#hero" style="display:flex;align-items:center;gap:12px;text-decoration:none">
+    <img src="assets/logo-light.png" alt="TOP SERVICES EXELIUM" style="height:46px;width:auto;display:block">
+  </a>
+  <nav class="tse-hide-m" style="display:flex;gap:6px;align-items:center;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:40px;padding:5px 6px">
+    <a href="#hero" class="nav-link">Accueil</a>
+    <a href="#apropos" class="nav-link">À propos</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#pourquoi" class="nav-link">Pourquoi nous</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+  <a href="#contact" class="btn-cta">Demander un devis</a>
+</header>
+
+<!-- HERO -->
+<section id="hero" style="position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 20px 80px;overflow:hidden;background:radial-gradient(120% 90% at 50% 8%,#103A78 0%,#0B2D66 38%,#07203F 78%,#061224 100%)">
+  <canvas id="tseCanvas" style="position:absolute;inset:0;width:100%;height:100%;z-index:1"></canvas>
+  <div style="position:absolute;width:520px;height:520px;left:14%;top:24%;background:radial-gradient(circle,rgba(212,161,47,.22),transparent 65%);filter:blur(20px);z-index:1;pointer-events:none"></div>
+  <div style="position:absolute;width:560px;height:560px;right:8%;bottom:10%;background:radial-gradient(circle,rgba(40,110,210,.28),transparent 65%);filter:blur(24px);z-index:1;pointer-events:none"></div>
+
+  <div style="position:relative;z-index:3;display:flex;flex-direction:column;align-items:center;max-width:1020px">
+    <div id="tseMedalWrap" style="position:relative;margin-bottom:34px;will-change:transform">
+      <div style="position:relative;animation:tseFloat 7s ease-in-out infinite">
+        <div style="position:absolute;left:50%;top:50%;width:300px;height:300px;background:radial-gradient(circle,rgba(212,161,47,.55),transparent 62%);border-radius:50%;animation:tseHalo 5s ease-in-out infinite;z-index:0;pointer-events:none"></div>
+        <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:236px;height:236px;border-radius:50%;border:1.5px solid transparent;background:conic-gradient(from 0deg,rgba(212,161,47,0),#D4A12F,rgba(212,161,47,0),#E8C26B,rgba(212,161,47,0)) border-box;-webkit-mask:linear-gradient(#000 0 0) padding-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;animation:tseSpin 14s linear infinite;z-index:1"></div>
+        <div style="position:relative;z-index:2;width:200px;height:200px;border-radius:50%;background:linear-gradient(160deg,#ffffff,#eef2f8);box-shadow:0 24px 70px -18px rgba(0,0,0,.6),inset 0 2px 8px rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;overflow:hidden">
+          <img src="assets/logo.png" alt="TOP SERVICES EXELIUM" style="width:150px;height:150px;object-fit:contain;display:block">
+          <div style="position:absolute;top:0;left:0;width:55%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.85),transparent);animation:tseSheen 6s ease-in-out infinite;pointer-events:none"></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="opacity:0;animation:tseRise .9s .15s both;display:inline-flex;align-items:center;gap:9px;padding:7px 16px;border:1px solid rgba(212,161,47,.4);border-radius:40px;background:rgba(212,161,47,.08);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:#E8C26B;font-weight:600;margin-bottom:26px">
+      <span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;box-shadow:0 0 10px #D4A12F"></span>Produits · Services · Excellence
+    </div>
+
+    <h1 style="opacity:0;animation:tseRise 1s .25s both;font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(2.4rem,6.2vw,5rem);line-height:1.04;letter-spacing:-.02em;margin:0;text-wrap:balance;color:#fff">L'Excellence au Service de Votre <span style="background:linear-gradient(100deg,#E8C26B,#D4A12F,#F2D98C,#D4A12F);background-size:220% auto;-webkit-background-clip:text;background-clip:text;color:transparent;animation:tseGrad 6s ease infinite">Performance</span></h1>
+
+    <p style="opacity:0;animation:tseRise 1s .4s both;max-width:680px;margin:24px auto 0;font-size:clamp(1rem,1.4vw,1.18rem);line-height:1.6;color:rgba(255,255,255,.78)">Nous accompagnons les entreprises grâce à des solutions professionnelles en fourniture d'équipements, produits, logistique et services sur mesure.</p>
+
+    <div style="opacity:0;animation:tseRise 1s .55s both;display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:38px">
+      <a href="#services" class="btn-hero-gold">Découvrir nos services<span style="font-size:17px">→</span></a>
+      <a href="#contact" class="btn-hero-glass">Demander un devis</a>
+    </div>
+  </div>
+
+  <a href="#apropos" style="position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:3;text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.55)">
+    <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase">Défiler</span>
+    <span style="width:24px;height:38px;border:1.5px solid rgba(255,255,255,.35);border-radius:14px;display:flex;justify-content:center;padding-top:7px"><span style="width:4px;height:8px;background:#D4A12F;border-radius:3px;animation:tseScroll 1.8s ease-in-out infinite"></span></span>
+  </a>
+
+  <div id="sceneSwitcher" style="position:absolute;right:clamp(16px,3vw,38px);bottom:30px;z-index:5;display:flex;gap:4px;padding:5px;border-radius:40px;background:rgba(7,26,51,.5);border:1px solid rgba(212,161,47,.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)">
+    <button class="scene-btn active" data-scene="cubes">Cubes</button>
+    <button class="scene-btn" data-scene="network">Réseau</button>
+    <button class="scene-btn" data-scene="orbit">Orbite</button>
+  </div>
+</section>
+
+<!-- A PROPOS -->
+<section id="apropos" style="scroll-margin-top:84px;position:relative;background:#ffffff;color:#16243F;padding:clamp(70px,9vw,130px) clamp(18px,5vw,80px)">
+  <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(36px,5vw,72px);align-items:center">
+    <div>
+      <div data-reveal style="display:inline-flex;align-items:center;gap:9px;color:#B8860B;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px"><span style="width:26px;height:2px;background:#D4A12F"></span>À propos</div>
+      <h2 data-reveal data-delay="60" style="font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(1.9rem,3.4vw,2.8rem);line-height:1.12;letter-spacing:-.02em;margin:0 0 22px;color:#0B2D66">Un partenaire fiable pour vos approvisionnements et vos services</h2>
+      <p data-reveal data-delay="120" style="font-size:1.02rem;line-height:1.72;color:#475873;margin:0 0 18px">TOP SERVICES EXELIUM est une entreprise spécialisée dans la fourniture de produits, la fourniture d'équipements professionnels, les solutions logistiques ainsi que divers services destinés aux entreprises, administrations et organisations.</p>
+      <p data-reveal data-delay="180" style="font-size:1.02rem;line-height:1.72;color:#475873;margin:0 0 30px">Notre objectif est d'apporter des solutions fiables, rapides et adaptées aux besoins de nos clients.</p>
+      <div data-reveal data-delay="240" style="display:flex;flex-wrap:wrap;gap:12px">
+        <span style="display:inline-flex;align-items:center;gap:9px;padding:10px 18px;border-radius:40px;background:#F4F7FC;border:1px solid #E4EAF3;font-weight:600;font-size:14px;color:#0B2D66"><span style="width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,#E8C26B,#D4A12F)"></span>Excellence</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;padding:10px 18px;border-radius:40px;background:#F4F7FC;border:1px solid #E4EAF3;font-weight:600;font-size:14px;color:#0B2D66"><span style="width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,#E8C26B,#D4A12F)"></span>Qualité</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;padding:10px 18px;border-radius:40px;background:#F4F7FC;border:1px solid #E4EAF3;font-weight:600;font-size:14px;color:#0B2D66"><span style="width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,#E8C26B,#D4A12F)"></span>Innovation</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;padding:10px 18px;border-radius:40px;background:#F4F7FC;border:1px solid #E4EAF3;font-weight:600;font-size:14px;color:#0B2D66"><span style="width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,#E8C26B,#D4A12F)"></span>Réactivité</span>
+        <span style="display:inline-flex;align-items:center;gap:9px;padding:10px 18px;border-radius:40px;background:#F4F7FC;border:1px solid #E4EAF3;font-weight:600;font-size:14px;color:#0B2D66"><span style="width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,#E8C26B,#D4A12F)"></span>Satisfaction Client</span>
+      </div>
+    </div>
+    <div data-reveal data-delay="120" style="position:relative">
+      <div style="position:absolute;inset:auto -16px -16px auto;width:70%;height:70%;background:linear-gradient(135deg,rgba(212,161,47,.16),transparent);border-radius:24px;z-index:0"></div>
+      <div style="position:relative;z-index:1;border-radius:22px;overflow:hidden;box-shadow:0 30px 70px -28px rgba(11,45,102,.4);background:radial-gradient(ellipse at 50% 0%,#0a1f44,#030d1a 70%);aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px">
+        <!-- globe -->
+        <div style="position:relative">
+          <!-- outer glow ring -->
+          <div style="position:absolute;inset:-18px;border-radius:50%;background:radial-gradient(circle,rgba(90,160,255,.18),transparent 68%);pointer-events:none"></div>
+          <!-- rotating earth -->
+          <div id="tseGlobe" style="position:relative;width:200px;height:200px;border-radius:50%;overflow:hidden;box-shadow:0 0 20px rgba(255,255,255,.18),-5px 0 8px #c3f4ff inset,15px 2px 25px #000 inset,-24px -2px 34px #c3f4ff99 inset,250px 0 44px #00000066 inset,150px 0 38px #000000aa inset;background-image:url('https://pub-940ccf6255b54fa799a9b01050e6c227.r2.dev/globe.jpeg');background-size:cover;background-position:left;animation:earthRotate 30s linear infinite">
+            <!-- twinkling stars on surface -->
+            <span style="position:absolute;left:28px;top:38px;width:3px;height:3px;background:#fff;border-radius:50%;animation:globeStar 3s infinite"></span>
+            <span style="position:absolute;left:165px;top:55px;width:3px;height:3px;background:#fff;border-radius:50%;animation:globeStarSlow 2.2s infinite"></span>
+            <span style="position:absolute;left:95px;top:18px;width:2px;height:2px;background:#fff;border-radius:50%;animation:globeStarFast 1.6s infinite"></span>
+            <span style="position:absolute;left:55px;top:160px;width:3px;height:3px;background:#fff;border-radius:50%;animation:globeStar 3.6s infinite"></span>
+            <span style="position:absolute;left:148px;top:148px;width:2px;height:2px;background:#fff;border-radius:50%;animation:globeStarSlow 4.1s infinite"></span>
+            <span style="position:absolute;left:120px;top:80px;width:2px;height:2px;background:#fff;border-radius:50%;animation:globeStarFast 2s infinite"></span>
+          </div>
+          <!-- logo pin orbiting above the globe -->
+          <div id="tseGlobePin" style="position:absolute;top:-22px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;pointer-events:none;z-index:4">
+            <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(160deg,#fff,#eef2f8);box-shadow:0 8px 26px -8px rgba(0,0,0,.55),0 0 0 3px rgba(212,161,47,.6),inset 0 2px 5px rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;overflow:hidden">
+              <img src="assets/logo.png" alt="TSE" style="width:38px;height:38px;object-fit:contain;display:block">
+            </div>
+            <!-- pin stem -->
+            <div style="width:2px;height:14px;background:linear-gradient(#D4A12F,rgba(212,161,47,0))"></div>
+          </div>
+        </div>
+        <div style="text-align:center;padding-bottom:8px">
+          <div style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.18rem;color:#fff;letter-spacing:-.01em">Excellence opérationnelle</div>
+          <div style="font-family:monospace;font-size:11px;letter-spacing:.1em;color:rgba(232,194,107,.8);margin-top:6px">Abidjan · Côte d'Ivoire</div>
+        </div>
+      </div>
+      <div style="position:relative;z-index:2;margin-top:-34px;margin-left:auto;width:fit-content;background:#fff;border:1px solid #E4EAF3;border-radius:16px;padding:18px 24px;box-shadow:0 18px 44px -18px rgba(11,45,102,.3);display:flex;gap:26px">
+        <div><div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.7rem;color:#0B2D66">+12</div><div style="font-size:12px;color:#6B7C96">Secteurs servis</div></div>
+        <div style="width:1px;background:#E4EAF3"></div>
+        <div><div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.7rem;background:linear-gradient(135deg,#E8C26B,#D4A12F);-webkit-background-clip:text;background-clip:text;color:transparent">100%</div><div style="font-size:12px;color:#6B7C96">Engagement</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="scroll-margin-top:84px;background:#F5F7FB;color:#16243F;padding:clamp(70px,9vw,130px) clamp(18px,5vw,80px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <div style="text-align:center;max-width:680px;margin:0 auto 56px">
+      <div data-reveal style="display:inline-flex;align-items:center;gap:9px;color:#B8860B;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px"><span style="width:26px;height:2px;background:#D4A12F"></span>Nos services<span style="width:26px;height:2px;background:#D4A12F"></span></div>
+      <h2 data-reveal data-delay="60" style="font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(1.9rem,3.4vw,2.8rem);line-height:1.14;letter-spacing:-.02em;margin:0;color:#0B2D66">Des solutions complètes, pensées pour la performance</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:24px">
+
+      <div class="svc-card" data-tilt data-reveal style="transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s;position:relative;background:rgba(255,255,255,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.9);border-radius:20px;padding:30px;box-shadow:0 18px 44px -26px rgba(11,45,102,.35);overflow:hidden">
+        <div style="position:absolute;top:-40px;right:-40px;width:130px;height:130px;background:radial-gradient(circle,rgba(212,161,47,.18),transparent 70%);border-radius:50%"></div>
+        <div class="svc-icon"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#E8C26B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="11" width="32" height="22" rx="2"/><path d="M18 41h12M24 33v8"/></svg></div>
+        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.25rem;margin:0 0 14px;color:#0B2D66">Fourniture d'équipements</h3>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Informatique</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Mobilier</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Matériel industriel</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Équipements professionnels</div>
+        </div>
+      </div>
+
+      <div class="svc-card" data-tilt data-reveal data-delay="80" style="transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s;position:relative;background:rgba(255,255,255,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.9);border-radius:20px;padding:30px;box-shadow:0 18px 44px -26px rgba(11,45,102,.35);overflow:hidden">
+        <div style="position:absolute;top:-40px;right:-40px;width:130px;height:130px;background:radial-gradient(circle,rgba(212,161,47,.18),transparent 70%);border-radius:50%"></div>
+        <div class="svc-icon"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#E8C26B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16v22h28V16"/><path d="M8 16 24 8l16 8"/><path d="M24 8v30"/></svg></div>
+        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.25rem;margin:0 0 14px;color:#0B2D66">Fourniture de produits</h3>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Consommables</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Fournitures de bureau</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Produits techniques</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Produits divers</div>
+        </div>
+      </div>
+
+      <div class="svc-card" data-tilt data-reveal data-delay="160" style="transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s;position:relative;background:rgba(255,255,255,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.9);border-radius:20px;padding:30px;box-shadow:0 18px 44px -26px rgba(11,45,102,.35);overflow:hidden">
+        <div style="position:absolute;top:-40px;right:-40px;width:130px;height:130px;background:radial-gradient(circle,rgba(212,161,47,.18),transparent 70%);border-radius:50%"></div>
+        <div class="svc-icon"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#E8C26B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16h22v16H6z"/><path d="M28 21h8l5 6v5h-13z"/><circle cx="14" cy="35" r="3.2"/><circle cx="34" cy="35" r="3.2"/></svg></div>
+        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.25rem;margin:0 0 14px;color:#0B2D66">Organisation logistique</h3>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Transport</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Distribution</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Livraison</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Gestion des stocks</div>
+        </div>
+      </div>
+
+      <div class="svc-card" data-tilt data-reveal style="transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s;position:relative;background:rgba(255,255,255,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.9);border-radius:20px;padding:30px;box-shadow:0 18px 44px -26px rgba(11,45,102,.35);overflow:hidden">
+        <div style="position:absolute;top:-40px;right:-40px;width:130px;height:130px;background:radial-gradient(circle,rgba(212,161,47,.18),transparent 70%);border-radius:50%"></div>
+        <div class="svc-icon"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#E8C26B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 10h30v22H20l-8 7v-7H9z"/><path d="M17 18h14M17 24h9"/></svg></div>
+        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.25rem;margin:0 0 14px;color:#0B2D66">Conseil</h3>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Accompagnement</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Gestion de projets</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Optimisation des achats</div>
+        </div>
+      </div>
+
+      <div class="svc-card" data-tilt data-reveal data-delay="80" style="transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s;position:relative;background:rgba(255,255,255,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.9);border-radius:20px;padding:30px;box-shadow:0 18px 44px -26px rgba(11,45,102,.35);overflow:hidden">
+        <div style="position:absolute;top:-40px;right:-40px;width:130px;height:130px;background:radial-gradient(circle,rgba(212,161,47,.18),transparent 70%);border-radius:50%"></div>
+        <div class="svc-icon"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#E8C26B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="7"/><circle cx="12" cy="13" r="3.5"/><circle cx="36" cy="13" r="3.5"/><path d="M15 15.5 19 19M33 15.5 29 19"/></svg></div>
+        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.25rem;margin:0 0 14px;color:#0B2D66">Solutions professionnelles</h3>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Services aux entreprises</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Externalisation</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:#52637E"><span style="width:6px;height:6px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span>Assistance</div>
+        </div>
+      </div>
+
+      <div class="svc-card" data-tilt data-reveal data-delay="160" style="transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s;position:relative;background:linear-gradient(150deg,#0B2D66,#0d3573);color:#fff;border:1px solid rgba(212,161,47,.3);border-radius:20px;padding:30px;box-shadow:0 22px 50px -26px rgba(11,45,102,.7);overflow:hidden">
+        <div style="position:absolute;top:-40px;right:-40px;width:150px;height:150px;background:radial-gradient(circle,rgba(212,161,47,.32),transparent 70%);border-radius:50%"></div>
+        <div class="svc-icon-gold"><svg width="30" height="30" viewBox="0 0 48 48" fill="none" stroke="#07203F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="13"/><circle cx="24" cy="24" r="6.5"/><circle cx="24" cy="24" r="1.6" fill="#07203F"/></svg></div>
+        <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.25rem;margin:0 0 14px;color:#fff">Services personnalisés</h3>
+        <div style="display:flex;flex-direction:column;gap:9px">
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,.8)"><span style="width:6px;height:6px;border-radius:50%;background:#E8C26B;flex-shrink:0"></span>Étude des besoins</div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:14px;color:rgba(255,255,255,.8)"><span style="width:6px;height:6px;border-radius:50%;background:#E8C26B;flex-shrink:0"></span>Solutions sur mesure</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECTEURS MARQUEE -->
+<div style="background:#0B2D66;border-top:1px solid rgba(212,161,47,.2);border-bottom:1px solid rgba(212,161,47,.2);padding:20px 0;overflow:hidden">
+  <div style="display:flex;width:max-content;gap:0;white-space:nowrap;animation:tseMarquee 32s linear infinite">
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Industrie<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Commerce<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Banques<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Administrations<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Éducation<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Santé<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Télécommunications<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">BTP<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">PME<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Grandes entreprises<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <!-- duplicate for seamless loop -->
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Industrie<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Commerce<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Banques<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Administrations<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Éducation<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Santé<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Télécommunications<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">BTP<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">PME<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+    <span style="display:inline-flex;align-items:center;gap:46px;padding-right:46px;font-family:'Poppins',sans-serif;font-weight:600;font-size:18px;color:rgba(255,255,255,.55)">Grandes entreprises<span style="width:7px;height:7px;border-radius:50%;background:#D4A12F;flex-shrink:0"></span></span>
+  </div>
+</div>
+
+<!-- POURQUOI + CHIFFRES -->
+<section id="pourquoi" style="scroll-margin-top:84px;position:relative;background:radial-gradient(120% 100% at 80% 0%,#103A78,#0B2D66 50%,#07203F);color:#fff;padding:clamp(70px,9vw,130px) clamp(18px,5vw,80px);overflow:hidden">
+  <div style="position:absolute;left:-120px;top:20%;width:420px;height:420px;background:radial-gradient(circle,rgba(212,161,47,.16),transparent 65%);filter:blur(20px);pointer-events:none"></div>
+  <div style="position:relative;max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:clamp(40px,6vw,80px)">
+    <div>
+      <div data-reveal style="display:inline-flex;align-items:center;gap:9px;color:#E8C26B;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px"><span style="width:26px;height:2px;background:#D4A12F"></span>Pourquoi nous choisir</div>
+      <h2 data-reveal data-delay="60" style="font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(1.9rem,3.4vw,2.7rem);line-height:1.14;letter-spacing:-.02em;margin:0 0 38px">Une exigence à chaque étape</h2>
+      <div style="position:relative;display:flex;flex-direction:column;gap:4px">
+        <div style="position:absolute;left:17px;top:8px;bottom:8px;width:2px;background:linear-gradient(#D4A12F,rgba(212,161,47,.1))"></div>
+        <div data-reveal style="position:relative;display:flex;align-items:center;gap:18px;padding:13px 0"><span style="position:relative;z-index:1;flex:none;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#E8C26B,#D4A12F);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px rgba(212,161,47,.12)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#07203F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span style="font-size:1.08rem;font-weight:500;color:rgba(255,255,255,.92)">Professionnalisme</span></div>
+        <div data-reveal style="position:relative;display:flex;align-items:center;gap:18px;padding:13px 0"><span style="position:relative;z-index:1;flex:none;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#E8C26B,#D4A12F);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px rgba(212,161,47,.12)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#07203F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span style="font-size:1.08rem;font-weight:500;color:rgba(255,255,255,.92)">Respect des délais</span></div>
+        <div data-reveal style="position:relative;display:flex;align-items:center;gap:18px;padding:13px 0"><span style="position:relative;z-index:1;flex:none;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#E8C26B,#D4A12F);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px rgba(212,161,47,.12)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#07203F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span style="font-size:1.08rem;font-weight:500;color:rgba(255,255,255,.92)">Produits de qualité</span></div>
+        <div data-reveal style="position:relative;display:flex;align-items:center;gap:18px;padding:13px 0"><span style="position:relative;z-index:1;flex:none;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#E8C26B,#D4A12F);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px rgba(212,161,47,.12)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#07203F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span style="font-size:1.08rem;font-weight:500;color:rgba(255,255,255,.92)">Équipe expérimentée</span></div>
+        <div data-reveal style="position:relative;display:flex;align-items:center;gap:18px;padding:13px 0"><span style="position:relative;z-index:1;flex:none;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#E8C26B,#D4A12F);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px rgba(212,161,47,.12)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#07203F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span style="font-size:1.08rem;font-weight:500;color:rgba(255,255,255,.92)">Accompagnement personnalisé</span></div>
+        <div data-reveal style="position:relative;display:flex;align-items:center;gap:18px;padding:13px 0"><span style="position:relative;z-index:1;flex:none;width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#E8C26B,#D4A12F);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 5px rgba(212,161,47,.12)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#07203F" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span><span style="font-size:1.08rem;font-weight:500;color:rgba(255,255,255,.92)">Solutions innovantes</span></div>
+      </div>
+    </div>
+
+    <div data-reveal data-delay="120" style="display:flex;flex-direction:column;justify-content:center">
+      <h3 style="font-family:'Poppins',sans-serif;font-weight:700;font-size:1.4rem;margin:0 0 8px">Chiffres clés</h3>
+      <p style="color:rgba(255,255,255,.65);margin:0 0 28px;font-size:.98rem">La confiance se mesure aux résultats.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+        <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:26px 22px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)">
+          <div data-count="150" data-suffix="+" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(2.1rem,4vw,3rem);line-height:1;background:linear-gradient(135deg,#fff,#E8C26B);-webkit-background-clip:text;background-clip:text;color:transparent">150+</div>
+          <div style="margin-top:8px;color:rgba(255,255,255,.7);font-size:.92rem">Clients satisfaits</div>
+        </div>
+        <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:26px 22px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)">
+          <div data-count="500" data-suffix="+" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(2.1rem,4vw,3rem);line-height:1;background:linear-gradient(135deg,#fff,#E8C26B);-webkit-background-clip:text;background-clip:text;color:transparent">500+</div>
+          <div style="margin-top:8px;color:rgba(255,255,255,.7);font-size:.92rem">Produits</div>
+        </div>
+        <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:26px 22px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)">
+          <div data-count="100" data-suffix="%" style="font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(2.1rem,4vw,3rem);line-height:1;background:linear-gradient(135deg,#fff,#E8C26B);-webkit-background-clip:text;background-clip:text;color:transparent">100%</div>
+          <div style="margin-top:8px;color:rgba(255,255,255,.7);font-size:.92rem">Engagement</div>
+        </div>
+        <div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:26px 22px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)">
+          <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(2.1rem,4vw,3rem);line-height:1;background:linear-gradient(135deg,#fff,#E8C26B);-webkit-background-clip:text;background-clip:text;color:transparent">24/7</div>
+          <div style="margin-top:8px;color:rgba(255,255,255,.7);font-size:.92rem">Disponibilité</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="scroll-margin-top:84px;background:#ffffff;color:#16243F;padding:clamp(70px,9vw,130px) clamp(18px,5vw,80px)">
+  <div style="max-width:1180px;margin:0 auto">
+    <div style="text-align:center;max-width:640px;margin:0 auto 52px">
+      <div data-reveal style="display:inline-flex;align-items:center;gap:9px;color:#B8860B;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px"><span style="width:26px;height:2px;background:#D4A12F"></span>Contact<span style="width:26px;height:2px;background:#D4A12F"></span></div>
+      <h2 data-reveal data-delay="60" style="font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(1.9rem,3.4vw,2.8rem);line-height:1.14;letter-spacing:-.02em;margin:0;color:#0B2D66">Parlons de votre projet</h2>
+    </div>
+    <div class="contact-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:32px;align-items:start">
+
+      <form id="contactForm" data-reveal novalidate style="background:#F7F9FC;border:1px solid #E6ECF5;border-radius:24px;padding:clamp(24px,4vw,40px);box-shadow:0 30px 70px -40px rgba(11,45,102,.4)">
+        <div id="formSuccess" style="display:none;align-items:center;gap:12px;background:rgba(34,150,90,.1);border:1px solid rgba(34,150,90,.3);color:#1c7a4d;border-radius:14px;padding:14px 18px;margin-bottom:22px;font-weight:500;font-size:.95rem">
+          <span style="width:24px;height:24px;border-radius:50%;background:#22965a;color:#fff;display:flex;align-items:center;justify-content:center;flex:none"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></span>
+          Merci&nbsp;! Votre demande a bien été envoyée. Nous vous recontactons rapidement.
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <label style="display:flex;flex-direction:column;gap:7px">
+            <span style="font-size:13px;font-weight:600;color:#3A4A66">Nom *</span>
+            <input type="text" name="nom" placeholder="Votre nom" class="f-input">
+            <span id="err-nom" style="font-size:12px;color:#c0392b;display:none"></span>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:7px">
+            <span style="font-size:13px;font-weight:600;color:#3A4A66">Entreprise</span>
+            <input type="text" name="entreprise" placeholder="Votre société" class="f-input">
+          </label>
+          <label style="display:flex;flex-direction:column;gap:7px">
+            <span style="font-size:13px;font-weight:600;color:#3A4A66">Téléphone *</span>
+            <input type="tel" name="telephone" placeholder="+225 ..." class="f-input">
+            <span id="err-telephone" style="font-size:12px;color:#c0392b;display:none"></span>
+          </label>
+          <label style="display:flex;flex-direction:column;gap:7px">
+            <span style="font-size:13px;font-weight:600;color:#3A4A66">Email *</span>
+            <input type="email" name="email" placeholder="vous@entreprise.com" class="f-input">
+            <span id="err-email" style="font-size:12px;color:#c0392b;display:none"></span>
+          </label>
+        </div>
+        <label style="display:flex;flex-direction:column;gap:7px;margin-top:16px">
+          <span style="font-size:13px;font-weight:600;color:#3A4A66">Service recherché</span>
+          <select name="service" class="f-input">
+            <option>Fourniture d'équipements</option>
+            <option>Fourniture de produits</option>
+            <option>Organisation logistique</option>
+            <option>Conseil</option>
+            <option>Solutions professionnelles</option>
+            <option>Services personnalisés</option>
+          </select>
+        </label>
+        <label style="display:flex;flex-direction:column;gap:7px;margin-top:16px">
+          <span style="font-size:13px;font-weight:600;color:#3A4A66">Message *</span>
+          <textarea name="message" rows="4" placeholder="Décrivez votre besoin..." class="f-input" style="resize:vertical"></textarea>
+          <span id="err-message" style="font-size:12px;color:#c0392b;display:none"></span>
+        </label>
+        <button type="submit" class="btn-submit">Envoyer<span style="font-size:17px">→</span></button>
+      </form>
+
+      <div data-reveal data-delay="120" style="display:flex;flex-direction:column;gap:18px">
+        <div style="display:flex;flex-direction:column;gap:18px;background:linear-gradient(150deg,#0B2D66,#0d3573);color:#fff;border-radius:24px;padding:30px;box-shadow:0 26px 60px -34px rgba(11,45,102,.6)">
+          <div style="display:flex;gap:15px;align-items:flex-start">
+            <span style="flex:none;width:44px;height:44px;border-radius:12px;background:rgba(212,161,47,.18);display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8C26B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.5-7-11a7 7 0 0114 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><div style="font-weight:600;font-size:15px">Adresse</div><div style="color:rgba(255,255,255,.72);font-size:14px;margin-top:3px">Abidjan, Côte d'Ivoire</div></div>
+          </div>
+          <div style="display:flex;gap:15px;align-items:flex-start">
+            <span style="flex:none;width:44px;height:44px;border-radius:12px;background:rgba(212,161,47,.18);display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E8C26B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span>
+            <div><div style="font-weight:600;font-size:15px">Téléphone</div><div style="color:rgba(255,255,255,.72);font-size:14px;margin-top:3px;line-height:1.7">+225 01 70 14 67 25<br>+225 01 42 02 02 24<br>+225 01 53 44 52 78</div></div>
+          </div>
+        </div>
+        <div style="border-radius:24px;overflow:hidden;border:1px solid #E6ECF5;box-shadow:0 26px 60px -40px rgba(11,45,102,.4);height:260px">
+          <iframe title="Carte TOP SERVICES EXELIUM" src="https://maps.google.com/maps?q=5.347959,-3.968636&hl=fr&z=16&output=embed" style="width:100%;height:100%;border:0;display:block;filter:grayscale(.2)" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#061224;color:rgba(255,255,255,.7);padding:clamp(56px,7vw,90px) clamp(18px,5vw,80px) 30px;border-top:1px solid rgba(212,161,47,.18)">
+  <div class="footer-grid" style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr 1.4fr;gap:40px">
+    <div>
+      <img src="assets/logo-light.png" alt="TOP SERVICES EXELIUM" style="height:64px;width:auto;margin-bottom:18px;display:block">
+      <p style="font-size:14px;line-height:1.7;max-width:300px;margin:0 0 20px">L'excellence au service de votre performance. Fourniture, logistique et services sur mesure pour les entreprises et organisations.</p>
+      <div style="display:flex;gap:10px">
+        <a href="#" aria-label="LinkedIn" class="social-btn" style="font-size:13px">in</a>
+        <a href="#" aria-label="Facebook" class="social-btn" style="font-size:15px">f</a>
+        <a href="#" aria-label="X" class="social-btn" style="font-size:14px">X</a>
+      </div>
+    </div>
+    <div>
+      <div style="color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;margin-bottom:16px">Liens rapides</div>
+      <div style="display:flex;flex-direction:column;gap:11px">
+        <a href="#apropos" class="footer-link">À propos</a>
+        <a href="#services" class="footer-link">Services</a>
+        <a href="#pourquoi" class="footer-link">Pourquoi nous</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+    </div>
+    <div>
+      <div style="color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;margin-bottom:16px">Services</div>
+      <div style="display:flex;flex-direction:column;gap:11px">
+        <span style="font-size:14px">Équipements</span>
+        <span style="font-size:14px">Produits</span>
+        <span style="font-size:14px">Logistique</span>
+        <span style="font-size:14px">Conseil</span>
+      </div>
+    </div>
+    <div>
+      <div style="color:#fff;font-family:'Poppins',sans-serif;font-weight:600;font-size:15px;margin-bottom:16px">Newsletter</div>
+      <p style="font-size:13px;margin:0 0 14px">Recevez nos actualités et offres.</p>
+      <div style="display:flex;gap:8px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:5px 5px 5px 14px">
+        <input type="email" placeholder="Votre email" style="flex:1;min-width:0;background:transparent;border:none;outline:none;color:#fff;font-family:inherit;font-size:13px">
+        <button style="border:none;cursor:pointer;background:linear-gradient(135deg,#E8C26B,#D4A12F);color:#07203F;font-weight:700;font-size:13px;padding:9px 16px;border-radius:9px">OK</button>
+      </div>
+    </div>
+  </div>
+  <div style="max-width:1180px;margin:46px auto 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:13px;color:rgba(255,255,255,.5)">
+    <span>© 2026 TOP SERVICES EXELIUM. Tous droits réservés.</span>
+    <span>Produits · Services · Excellence</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // ── Scene switcher ────────────────────────────────────────────────────────
+  let scene = 'cubes';
+  const sceneBtns = document.querySelectorAll('.scene-btn');
+  sceneBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      scene = btn.dataset.scene;
+      sceneBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+
+  // ── Canvas animation ──────────────────────────────────────────────────────
+  (function initCanvas() {
+    const cv = document.getElementById('tseCanvas');
+    if (!cv) return;
+    const ctx = cv.getContext('2d');
+    const DPR = Math.min(2, window.devicePixelRatio || 1);
+    let W = 0, H = 0, cx = 0, cy = 0;
+
+    const resize = () => {
+      const p = cv.parentElement;
+      W = p.clientWidth; H = p.clientHeight;
+      cv.width = W * DPR; cv.height = H * DPR;
+      cv.style.width = W + 'px'; cv.style.height = H + 'px';
+      ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+      cx = W / 2; cy = H / 2;
+    };
+    resize();
+    window.addEventListener('resize', resize);
+
+    const reduce = window.matchMedia && matchMedia('(prefers-reduced-motion:reduce)').matches;
+    const NP = reduce ? 30 : 78;
+    const pts = Array.from({length: NP}, () => ({
+      x: (Math.random() - .5) * 1000,
+      y: (Math.random() - .5) * 620,
+      z: (Math.random() - .5) * 760
+    }));
+
+    const NC = reduce ? 4 : 8;
+    const cubes = Array.from({length: NC}, () => ({
+      x: (Math.random() - .5) * 860, y: (Math.random() - .5) * 540,
+      z: (Math.random() - .5) * 680, s: 28 + Math.random() * 72,
+      rx: Math.random() * 6, ry: Math.random() * 6,
+      vrx: (Math.random() - .5) * .004, vry: (Math.random() - .5) * .0055
+    }));
+
+    const V = [[-1,-1,-1],[1,-1,-1],[1,1,-1],[-1,1,-1],[-1,-1,1],[1,-1,1],[1,1,1],[-1,1,1]];
+    const E = [[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]];
+
+    let mx = 0, my = 0, tmx = 0, tmy = 0;
+    window.addEventListener('mousemove', e => {
+      const r = cv.getBoundingClientRect();
+      tmx = (e.clientX - r.left) / Math.max(1, W) - .5;
+      tmy = (e.clientY - r.top)  / Math.max(1, H) - .5;
+    });
+
+    const FOV = 640;
+    const proj  = (x, y, z) => { const s = FOV/(FOV+z); return {x: cx+x*s, y: cy+y*s, s}; };
+    const rotY  = (p, a) => { const c=Math.cos(a), s=Math.sin(a); return {x:p.x*c-p.z*s, y:p.y, z:p.x*s+p.z*c}; };
+    const rotX  = (p, a) => { const c=Math.cos(a), s=Math.sin(a); return {x:p.x, y:p.y*c-p.z*s, z:p.y*s+p.z*c}; };
+    let t = 0;
+
+    (function frame() {
+      t += .0016; mx += (tmx-mx)*.05; my += (tmy-my)*.05;
+      ctx.clearRect(0, 0, W, H);
+      const ay = t + mx*.7, ax = my*.45;
+
+      const P = pts.map(p => { let r = rotY(p,ay); r = rotX(r,ax); return proj(r.x,r.y,r.z); });
+
+      ctx.lineWidth = 1;
+      for (let i = 0; i < P.length; i++) {
+        for (let j = i+1; j < P.length; j++) {
+          const dx = P[i].x-P[j].x, dy = P[i].y-P[j].y, d = dx*dx+dy*dy;
+          if (d < 17000) {
+            const a = (1 - Math.sqrt(d)/130) * .18;
+            if (a > 0) { ctx.strokeStyle='rgba(212,161,47,'+a.toFixed(3)+')'; ctx.beginPath(); ctx.moveTo(P[i].x,P[i].y); ctx.lineTo(P[j].x,P[j].y); ctx.stroke(); }
+          }
+        }
+      }
+      for (const p of P) {
+        const rad = Math.max(.6, p.s*1.5);
+        ctx.fillStyle = 'rgba(255,255,255,'+Math.min(.85,p.s*.6).toFixed(3)+')';
+        ctx.beginPath(); ctx.arc(p.x,p.y,rad,0,6.2832); ctx.fill();
+      }
+
+      if (scene === 'cubes') {
+        for (const cb of cubes) {
+          if (!reduce) { cb.rx += cb.vrx; cb.ry += cb.vry; }
+          const ps = V.map(v => {
+            let q = {x:v[0]*cb.s, y:v[1]*cb.s, z:v[2]*cb.s};
+            q = rotY(q,cb.ry); q = rotX(q,cb.rx);
+            q = {x:q.x+cb.x, y:q.y+cb.y, z:q.z+cb.z};
+            let r = rotY(q,ay); r = rotX(r,ax);
+            return proj(r.x,r.y,r.z);
+          });
+          ctx.strokeStyle = 'rgba(212,161,47,0.5)'; ctx.lineWidth = 1.2;
+          for (const e of E) { ctx.beginPath(); ctx.moveTo(ps[e[0]].x,ps[e[0]].y); ctx.lineTo(ps[e[1]].x,ps[e[1]].y); ctx.stroke(); }
+        }
+      } else if (scene === 'orbit') {
+        const g = ctx.createRadialGradient(cx,cy,0,cx,cy,190);
+        g.addColorStop(0,'rgba(212,161,47,0.45)'); g.addColorStop(1,'rgba(212,161,47,0)');
+        ctx.fillStyle = g; ctx.beginPath(); ctx.arc(cx,cy,190,0,6.2832); ctx.fill();
+        for (let ri = 0; ri < 3; ri++) {
+          const rr = 130 + ri*72;
+          ctx.save(); ctx.translate(cx,cy); ctx.scale(1,.32); ctx.rotate(t*(1+ri*.4)+ri);
+          ctx.strokeStyle = 'rgba(255,255,255,'+(0.26-ri*.06)+')'; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.arc(0,0,rr,0,6.2832); ctx.stroke();
+          const oa = t*(1.2+ri*.5)*60;
+          ctx.fillStyle = '#D4A12F'; ctx.beginPath(); ctx.arc(Math.cos(oa)*rr, Math.sin(oa)*rr, 5, 0, 6.2832); ctx.fill();
+          ctx.restore();
+        }
+      }
+      requestAnimationFrame(frame);
+    })();
+  })();
+
+  // ── Globe logo orbit ──────────────────────────────────────────────────────
+  (function initGlobeOrbit() {
+    const globe = document.getElementById('tseGlobe');
+    const pin   = document.getElementById('tseGlobePin');
+    if (!globe || !pin) return;
+    const R = 100; // globe radius px
+    let a = 0;
+    (function loop() {
+      a += 0.012;
+      const x = Math.cos(a) * R;
+      const z = Math.sin(a) * R;
+      // y offset: tilt orbit slightly
+      const y = Math.sin(a) * R * 0.28;
+      // scale for depth: front = large, back = small
+      const depth = (z + R) / (2 * R); // 0..1, 0=back 1=front
+      const sc = 0.55 + depth * 0.55;
+      const zIndex = depth > 0.5 ? 4 : 0;
+      pin.style.left = (100 + x - 26) + 'px';
+      pin.style.top  = (-26 - y + (1 - sc) * 26) + 'px';
+      pin.style.transform = 'scale(' + sc.toFixed(3) + ')';
+      pin.style.transformOrigin = 'top center';
+      pin.style.zIndex = zIndex;
+      pin.style.opacity = (0.45 + depth * 0.55).toFixed(3);
+      requestAnimationFrame(loop);
+    })();
+  })();
+
+  // ── Custom cursor ─────────────────────────────────────────────────────────
+  (function initCursor() {
+    if (!(window.matchMedia && matchMedia('(hover:hover) and (pointer:fine)').matches)) return;
+    const dot  = document.getElementById('tseCurDot');
+    const ring = document.getElementById('tseCurRing');
+    if (!dot || !ring) return;
+    document.documentElement.style.cursor = 'none';
+    let rx=0, ry=0, mx=0, my=0, tsc=1, sc=1;
+    window.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.transform = 'translate('+mx+'px,'+my+'px) translate(-50%,-50%)';
+    });
+    (function loop() {
+      rx += (mx-rx)*.18; ry += (my-ry)*.18; sc += (tsc-sc)*.2;
+      ring.style.transform = 'translate('+rx+'px,'+ry+'px) translate(-50%,-50%) scale('+sc.toFixed(3)+')';
+      requestAnimationFrame(loop);
+    })();
+    const ints = document.querySelectorAll('a,button,input,textarea,select');
+    ints.forEach(el => {
+      el.addEventListener('mouseenter', () => { tsc=1.9; ring.style.background='rgba(212,161,47,.14)'; });
+      el.addEventListener('mouseleave', () => { tsc=1;   ring.style.background='transparent'; });
+    });
+  })();
+
+  // ── Scroll reveal ─────────────────────────────────────────────────────────
+  (function initReveal() {
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    if (!els.length || !('IntersectionObserver' in window)) { els.forEach(el => { el.style.opacity='1'; el.style.transform='none'; }); return; }
+    const io = new IntersectionObserver(ents => {
+      ents.forEach(en => {
+        if (en.isIntersecting) {
+          const el = en.target, d = +(el.getAttribute('data-delay')||0);
+          setTimeout(() => { el.style.opacity='1'; el.style.transform='none'; }, d);
+          io.unobserve(el);
+        }
+      });
+    }, {threshold:.12, rootMargin:'0px 0px -8% 0px'});
+    els.forEach(el => {
+      el.style.opacity='0'; el.style.transform='translateY(34px)';
+      el.style.transition='opacity .85s cubic-bezier(.2,.7,.2,1),transform .85s cubic-bezier(.2,.7,.2,1)';
+      io.observe(el);
+    });
+  })();
+
+  // ── Animated counters ─────────────────────────────────────────────────────
+  (function initCounters() {
+    const els = Array.from(document.querySelectorAll('[data-count]'));
+    if (!els.length || !('IntersectionObserver' in window)) return;
+    const io = new IntersectionObserver(ents => {
+      ents.forEach(en => {
+        if (en.isIntersecting) {
+          const el = en.target, target = +el.getAttribute('data-count'), suf = el.getAttribute('data-suffix')||'';
+          const dur = 1500, st = performance.now();
+          (function step(now) {
+            const p = Math.min(1,(now-st)/dur), ease = 1-Math.pow(1-p,3);
+            el.textContent = Math.round(target*ease)+suf;
+            if (p < 1) requestAnimationFrame(step);
+          })(st);
+          io.unobserve(el);
+        }
+      });
+    }, {threshold:.4});
+    els.forEach(el => el.textContent = '0'+(el.getAttribute('data-suffix')||''));
+    els.forEach(el => io.observe(el));
+  })();
+
+  // ── Card tilt ─────────────────────────────────────────────────────────────
+  (function initTilt() {
+    document.querySelectorAll('[data-tilt]').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX-r.left)/r.width-.5, py = (e.clientY-r.top)/r.height-.5;
+        card.style.transform = 'perspective(820px) rotateY('+(px*9).toFixed(2)+'deg) rotateX('+(-py*9).toFixed(2)+'deg) translateY(-6px)';
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(820px) rotateY(0deg) rotateX(0deg) translateY(0)';
+      });
+    });
+  })();
+
+  // ── Hero parallax ─────────────────────────────────────────────────────────
+  (function initParallax() {
+    const wrap = document.getElementById('tseMedalWrap');
+    if (!wrap) return;
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (ticking) return; ticking = true;
+      requestAnimationFrame(() => {
+        wrap.style.transform = 'translateY('+(((window.scrollY||0)*.16).toFixed(1))+'px)';
+        ticking = false;
+      });
+    }, {passive:true});
+  })();
+
+  // ── Contact form ──────────────────────────────────────────────────────────
+  (function initForm() {
+    const form = document.getElementById('contactForm');
+    if (!form) return;
+    const err = (id, msg) => {
+      const el = document.getElementById('err-'+id);
+      if (!el) return;
+      el.textContent = msg; el.style.display = msg ? 'block' : 'none';
+    };
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const nom  = form.nom.value.trim();
+      const tel  = form.telephone.value.trim();
+      const mail = form.email.value.trim();
+      const msg  = form.message.value.trim();
+      let ok = true;
+      if (!nom)  { err('nom','Veuillez indiquer votre nom.'); ok=false; } else err('nom','');
+      if (!tel)  { err('telephone','Numéro requis.'); ok=false; } else err('telephone','');
+      if (!/^\S+@\S+\.\S+$/.test(mail)) { err('email','Adresse email invalide.'); ok=false; } else err('email','');
+      if (!msg || msg.length < 10) { err('message','Message trop court (10 caractères min).'); ok=false; } else err('message','');
+      if (ok) {
+        const btn = form.querySelector('.btn-submit');
+        const origText = btn.innerHTML;
+        btn.disabled = true;
+        btn.innerHTML = 'Envoi en cours…';
+
+        fetch('/submit-devis', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            nom,
+            entreprise: form.entreprise.value.trim(),
+            telephone: tel,
+            email: mail,
+            service: form.service.value,
+            message: msg
+          })
+        })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          btn.disabled = false;
+          btn.innerHTML = origText;
+          if (data.ok) {
+            const s = document.getElementById('formSuccess');
+            if (s) s.style.display = 'flex';
+            form.reset();
+            setTimeout(function() { if (s) s.style.display = 'none'; }, 6000);
+          } else {
+            alert('Erreur lors de l\'envoi : ' + (data.error || 'inconnue'));
+          }
+        })
+        .catch(function() {
+          btn.disabled = false;
+          btn.innerHTML = origText;
+          alert('Impossible de joindre le serveur. Vérifiez que le serveur est bien démarré.');
+        });
+      }
+    });
+  })();
+
+})();
+</script>
+</body>
+</html>
